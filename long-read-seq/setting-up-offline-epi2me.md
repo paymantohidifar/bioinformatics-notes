@@ -150,7 +150,7 @@ sudo rm -rf /tmp/apptainer
 
 #### Setting up Environment Variables
 
-**NXF_OFFLINE**
+* **NXF_OFFLINE**
 To configure NextFlow for offline execution, enable the `NXF_OFFLINE` environment variable by adding the following line to your terminal’s startup file (such as `~/.bashrc`). This ensures NextFlow operates in offline mode each time you start a new terminal session.
 
 **Bash:**
@@ -159,7 +159,7 @@ echo "export NXF_OFFLINE='true'" >> ~/.bashrc
 ```
 You can also manually add `export NXF_OFFLINE="true"` to your `~/.bashrc` file by editing it directly.
 
-**NXF_ASSETS**
+* **NXF_ASSETS**
 When you use the `nextflow pull` command to retrieve a workflow, NextFlow automatically downloads the workflow project into the `${HOME}/.nextflow/assets` directory. It is recommended that this directory resides on a high-capacity storage drive. If necessary, you can change its location by setting the `NXF_ASSETS` environment variable. For this setup, however, we will proceed with the default configuration.
 
 **Bash:**
