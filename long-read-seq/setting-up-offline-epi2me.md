@@ -191,7 +191,7 @@ To efficiently manage and organize your Nextflow executions, it is best practice
 2.  Workflow level
 3.  Local project level
 
-**Global level**
+**Global level**:
 The global configuration file is found or can be created at `~/.nextflow/config`. This file is mainly used to enable Apptainer and disable Docker, specify the directory for Apptainer container images (SIF files), and set the default executor to local for offline runs. With this configuration, Nextflow operates entirely offline, utilizes local SIF containers through Apptainer, and avoids connecting to Docker or remote repositories. Below is an example configuration you can follow:
 
 **Groovy (`~/.nextflow/config`):**
@@ -220,10 +220,10 @@ nextflow.scm = false
 nextflow.enable_update = false
 ```
 
-**Workflow level**
+**Workflow level**:
 Each workflow contains its own configuration file (`nextflow.config`). It is best not to modify this file, as updates to the workflow may overwrite any changes you make. Instead, use this file to gather information necessary for downloading compatible container images (see details below).
 
-**Local project level**
+**Local project level**:
 In this section, we enhance the flexibility of Nextflow configuration for individual local projects. Each project should have its own configuration file. Below is an example of a configuration file specifically designed for the `wf-bacterial-genomes` workflow, optimized for offline use.
 
 **Groovy (Project Config):**
