@@ -1,0 +1,12 @@
+## lecture materials
+bioinfx-data-skills-book/materials
+
+## certificates
+certificate/
+
+## Jupyter temporary files
+.ipynb_checkpoints/
+.virtual_documents/
+
+## MS documents
+*.docx
